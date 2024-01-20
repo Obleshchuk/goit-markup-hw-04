@@ -379,6 +379,7 @@ img {
 
 .portfolio-list-items:hover .portfolio-text {
 transform: translateY(0%);
+}
 
 .portfolio-text {
     color: #F4F4FD;
