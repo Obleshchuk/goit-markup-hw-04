@@ -377,7 +377,7 @@ img {
     overflow: hidden;
 }
 
-.portfolio-list-items:hover .portfolio-text {
+.portfolio-list-items:hover {
     transform: translateY(0%);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -395,15 +395,14 @@ img {
     top: 0;
     background: #4D5AE5;
     height: 100%;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
     transform: translateY(100%);
+    padding: 40px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-items {
     width: calc((100% - 48px)/3);
-    transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -497,11 +496,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socicons {
-    color: #f4f4fd;
+    background-color: #f4f4fd;
 
 }
 
